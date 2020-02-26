@@ -1,6 +1,7 @@
 import { Action, State, Selector, StateContext } from "@ngxs/store";
 import { Tutorial } from './tutorial.model';
 import { AddTutorial, RemoveTutorial } from "./tutorial.actions";
+import { Injectable } from '@angular/core';
 
 // THIS IS A REPLACEMENT FOR A REDUCER
 
@@ -19,6 +20,8 @@ export class TutorialStateModel {
     tutorials: []
   }
 })
+
+@Injectable() // need to add to state classes
 
 // Define State class - here we define selectors and what happens
 // when actions are dispatched on this state

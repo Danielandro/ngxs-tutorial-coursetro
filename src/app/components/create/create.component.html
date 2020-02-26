@@ -2,5 +2,5 @@
   <input type="text" placeholder="name" #name>
   <input type="text" placeholder="url" #url>
 
-  <button (click)="addTutorial(name.value, url.value)">Add a Tutorial</button>
+  <button (click)="addTutorial(name.value, url.value); name.value=''; url.value=''">Add a Tutorial</button>
 </div>

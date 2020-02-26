@@ -1,1 +1,10 @@
-<p>read works!</p>
+<div class="right" *ngIf="tutorials$ | async as tutorials">
+  <h3>Tutorials</h3>
+  <ul>
+    <li *ngFor="let tutorial of tutorials; index as i">
+      <a target="_blank" rel="noopener noreferrer">
+        {{ tutorial.name }}<span (click)="delTutorial(tutorial.name)" class="delete-btn">x</span>
+      </a>
+    </li>
+  </ul>
+</div>

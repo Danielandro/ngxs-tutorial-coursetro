@@ -1,0 +1,10 @@
+.delete-btn {
+  margin: 0px 10px;
+  font-size: 0.9em;
+  color: maroon;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
