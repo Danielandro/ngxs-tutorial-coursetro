@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngxs/store';
+import { AddTutorial } from 'src/app/store/tutorial/tutorial.actions';
 
 @Component({
   selector: 'app-create',
@@ -7,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
 
-  constructor() { }
+  // import store so we can access state
+  constructor(private store: Store) { }
 
+  // dispatch by passing in an instance of the Action with payload?
+  addTutorial(name, url) {
+    this.store.dispatch(new AddTutorial({ name, url }));
+  }
   ngOnInit(): void {
   }
 
