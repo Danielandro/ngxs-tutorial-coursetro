@@ -1,5 +1,4 @@
-import { Action } from "@ngxs/store";
-import { Tutorial } from '../models/tutorial.model';
+import { Tutorial } from './tutorial.model';
 
 /*
 Actions can be:
