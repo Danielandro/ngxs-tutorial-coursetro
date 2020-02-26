@@ -17,6 +17,6 @@ export class AddTutorial {
 }
 
 export class RemoveTutorial {
-  static readonly type = "[TUTORIAL] Remove Tutorial";
+  static readonly type = "[READ COMPONENT] Remove Tutorial";
   constructor(public payload: string) { }
 }
